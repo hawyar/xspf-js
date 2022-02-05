@@ -1,0 +1,20 @@
+{
+  "name": "xspf",
+  "version": "0.1.0",
+  "description": "xspf parser",
+  "main": "dist/xspf.js",
+  "scripts": {
+    "test": "tap --no-coverage",
+    "build": "esbuild xspf.js --minify --bundle --platform=node --outfile=dist/xspf.js"
+  },
+  "author": "hawyar",
+  "devDependencies": {
+    "esbuild": "^0.13.4",
+    "tap": "^15.0.9",
+    "typescript": "^4.5.2"
+  },
+  "license": "WTFPL",
+  "dependencies": {
+    "xml-js": "^1.6.11"
+  }
+}
