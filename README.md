@@ -1,8 +1,8 @@
-## xspf
+## xspf (“spiff”)
 
 ![tests](https://github.com/hawyar/node-lib-starter/actions/workflows/test.yml/badge.svg)
 
-> XML format for sharing playlists (https://xspf.org/)
+> XML format for sharing playlists (https://xspf.org/spec)
 
 ## Usage
 
@@ -10,25 +10,36 @@
 
 ```bash
 
-npm i @hawyar/xspd
+npm i @hawyar/xspf
 ```
 
 ### Parse
 
 ```js
-const xspf = require("xspf");
-const result = xspf.parse("some raw xml input");
+const xspf = require("xspf")
+
+const xml = `<?xml version="1.0" encoding="UTF-8"?>
+<playlist version="1" xmlns="http://xspf.org/ns/0/">
+<title>SpongeBob SquarePants Theme Song</title>
+  <trackList>
+    <track><location>file:///music/song\_2.flac</location></track>
+  </trackList>
+</playlist>
+`
+
+const result = xspf.parse(xml)
 
 // result:
 // {
-// 	"version": "1",
-// 	"xmlns": "http://xspf.org/ns/0/",
-// 	"title": "SpongeBob SquarePants Theme Song",
-// 	"creator": "SpongeBob",
-// 	"annotation": "Theme Song",
-// 	"identifier": "some_identifier",
-// 	"date": "2005-01-08T17:10:47-05:00"
+//   "version": "1",
+//   "xmlns": "http://xspf.org/ns/0/",
+//   "playlist": {
+//     "title": "SpongeBob SquarePants Theme Song",
+//     "trackList": [
+//       {
+//         "location": "file:///music/song_2.flac"
+//       }
+//     ]
+//   }
 // }
 ```
-
-see `example.xspf`

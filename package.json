@@ -5,7 +5,7 @@
   "main": "dist/xspf.js",
   "scripts": {
     "test": "tap --no-coverage",
-    "build": "esbuild xspf.js --minify --bundle --platform=node --outfile=dist/xspf.js"
+    "build": "esbuild xspf.js --minify --platform=node --outfile=dist/xspf.js"
   },
   "author": "hawyar",
   "devDependencies": {
