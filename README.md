@@ -10,13 +10,13 @@
 
 ```bash
 
-npm i @hawyar/xspf
+npm i xspf-js
 ```
 
 ### Parse
 
 ```js
-const xspf = require("xspf")
+const xspf = require("xspf-js")
 
 const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <playlist version="1" xmlns="http://xspf.org/ns/0/">

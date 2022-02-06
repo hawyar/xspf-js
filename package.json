@@ -1,7 +1,7 @@
 {
-  "name": "xspf",
+  "name": "xspf-js",
   "version": "0.1.0",
-  "description": "xspf parser",
+  "description": "XML format for sharing playlists (https://xspf.org/spec)",
   "main": "dist/xspf.js",
   "scripts": {
     "test": "tap --no-coverage",
