@@ -105,4 +105,6 @@ function parse(raw) {
   return result
 }
 
-module.exports = parse
+module.exports = {
+  parse
+}

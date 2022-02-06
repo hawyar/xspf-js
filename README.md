@@ -1,4 +1,4 @@
-## xspf (“spiff”)
+## xspf-js (“spiff”)
 
 ![tests](https://github.com/hawyar/node-lib-starter/actions/workflows/test.yml/badge.svg)
 
@@ -9,14 +9,13 @@
 ### Install
 
 ```bash
-
 npm i xspf-js
 ```
 
 ### Parse
 
 ```js
-const xspf = require("xspf-js")
+const { parse } = require("xspf-js")
 
 const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <playlist version="1" xmlns="http://xspf.org/ns/0/">
@@ -27,7 +26,7 @@ const xml = `<?xml version="1.0" encoding="UTF-8"?>
 </playlist>
 `
 
-const result = xspf.parse(xml)
+const result = parse(xml)
 
 // result:
 // {

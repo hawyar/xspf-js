@@ -1,6 +1,6 @@
 {
   "name": "xspf-js",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "XML format for sharing playlists (https://xspf.org/spec)",
   "main": "dist/xspf.js",
   "scripts": {
@@ -16,5 +16,19 @@
   "license": "WTFPL",
   "dependencies": {
     "xml-js": "^1.6.11"
-  }
+  },
+  "keywords": [
+    "xspf",
+    "xml",
+    "playlist",
+    "json"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hawyar/xspf-js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hawyar/xspf-js/issues"
+  },
+  "homepage": "https://github.com/hawyar/xspf-js"
 }
